@@ -17,12 +17,20 @@ function loadAirdrops() {
     savedAirdrops.innerHTML = "";
     let airdrops = JSON.parse(localStorage.getItem("airdrops")) || [];
 
-    airdrops.forEach((airdrop) => {
+    airdrops.forEach((airdrop, index) => {
         savedAirdrops.innerHTML += `
             <tr>
                 <td>${airdrop.name}</td>
                 <td><a href="${airdrop.link}" target="_blank">${airdrop.link}</a></td>
+                <td><button onclick="removeAirdrop(${index})">❌ Remove</button></td>
             </tr>
         `;
     });
+}
+
+function removeAirdrop(index) {
+    let airdrops = JSON.parse(localStorage.getItem("airdrops")) || [];
+    airdrops.splice(index, 1);  // Removes selected entry
+    localStorage.setItem("airdrops", JSON.stringify(airdrops));
+    loadAirdrops();
 }
