@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    color: #00FF00; /* Bright green text for contrast */
+    color: #00FF00; /* Bright green for visibility */
     font-family: Arial, sans-serif;
     text-align: center;
 }
@@ -13,7 +13,7 @@ body {
     border-radius: 10px;
 }
 
-/* Table Styles */
+/* Table Design */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -30,8 +30,21 @@ thead {
     color: #FFD700; /* Gold text */
 }
 
-/* Links */
+/* Link Styles */
 a {
-    color: #00BFFF; /* Light blue */
+    color: #00BFFF; /* Light blue for better visibility */
     font-weight: bold;
+}
+
+/* Remove Button */
+button {
+    padding: 8px;
+    background-color: #FF4444; /* Red delete button */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #CC0000; /* Darker red when hovered */
 }
