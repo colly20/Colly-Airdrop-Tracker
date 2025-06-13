@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+    color: #00FF00; /* Bright green text for contrast */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.dashboard {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid white;
+}
+
+thead {
+    background-color: #333;
+    color: #FFD700; /* Gold text */
+}
+
+/* Links */
+a {
+    color: #00BFFF; /* Light blue */
+    font-weight: bold;
+}

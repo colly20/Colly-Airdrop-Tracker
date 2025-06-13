@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airdrop Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Colly Daily Airdrop Tracker</h1>
+
+        <input type="text" id="airdropName" placeholder="Enter Airdrop Name">
+        <input type="url" id="airdropLink" placeholder="Enter Airdrop Link">
+        <button onclick="saveAirdrop()">Save</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Airdrop Name</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody id="savedAirdrops"></tbody>
+        </table>
+    </div>
+</body>
+</html>
